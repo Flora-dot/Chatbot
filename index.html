@@ -21,22 +21,16 @@
                         <p>Active 1h ago</p>
                     </div>
                 </div>
-                <div class="chat-area">
+                <div class="chat-area" id="chat-area">
                     <div class="chat_bot">
-                        <img src="images/Profile-picture.png" alt="user profile picture">
+                        <img src="images/Profile-picture.png" alt="user profile picture" class="profile-pic">
                         <div class="chat-message">
-                        <p id="chat-text">Hey there how are you doing</p>
+                        <p id="chat-text">Good day!!</p>
                         </div>
-                    </div>
-                    <div class="chat_user">
-                        <div class="chat-message">
-                        <p id="chat-text">Hey there how are you doing</p>
-                        </div>
-                        <img src="images/Profile-picture.png" alt="user profile picture">
                     </div>
                 </div>
-                <div class="chat-input">
-                    <input type="text-area" placeholder="Type a reply...">
+                <div class="chat-input" >
+                    <input type="text-area" placeholder="Type a reply..." id="chat-input">
                     <div class="chat-shortcuts">
                         <div class="gif">
                             <img src="images/gif.svg" alt="">
@@ -47,6 +41,8 @@
                 </div>
             </section>
             <button type="button" class="button-toggler" id="toggle-button"><img src="images/caret-down.svg" alt=""></button>
+            <button type="button" class="button-toggler inactive" id="inactive"><img src="images/caret-up.svg" alt=""></button>
+            
         </main>
 
         <script src="script.js"></script>
