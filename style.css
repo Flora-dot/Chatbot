@@ -197,10 +197,25 @@ main {
     border: none;
     background-color: var(--primary-blue);
     position: absolute;
-    bottom: 2px;
+    bottom: -5px;
 }
 
 .inactive {
     display: none;
-    /* bottom: 15px; */
+}
+
+@media only screen and  (min-width: 300px) and  (max-width: 430px) and (orientation: portrait) {
+    main {
+        padding-right: 25px;
+    }
+    .button-toggler {
+        bottom: -95px;
+    }
+}
+
+
+@media only screen and  (min-width: 300px) and  (max-width: 430px) and (orientation: landscape) {
+    .button-toggler {
+        bottom: -300px;
+    }
 }
