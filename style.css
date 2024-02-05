@@ -197,7 +197,9 @@ main {
     border: none;
     background-color: var(--primary-blue);
     position: absolute;
-    bottom: -5px;
+    bottom: 2px;
+    /* top: 95%; */
+  
 }
 
 .inactive {
@@ -205,6 +207,10 @@ main {
 }
 
 @media only screen and  (min-width: 300px) and  (max-width: 430px) and (orientation: portrait) {
+    .chat-box {
+        height: 100vh;
+        width: 100%;
+    }
     main {
         padding-right: 25px;
     }
@@ -215,7 +221,8 @@ main {
 
 
 @media only screen and  (min-width: 300px) and  (max-width: 430px) and (orientation: landscape) {
+
     .button-toggler {
-        bottom: -300px;
+        bottom: -400px;
     }
 }
