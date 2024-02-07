@@ -232,7 +232,7 @@ main {
 
 /* MEDIA QUERIES */
 
-@media only screen and  (min-width: 801px) and  (max-width: 920px) {
+@media only screen and  (min-width: 801px) and  (max-width: 940px) {
     main {
         padding: 30px;
         /* justify-content: center; */
@@ -313,7 +313,7 @@ main {
         width: 20px;
     }
     .button-toggler {
-       top: 75%;
+       top: 85%;
        right: 10%;
     }
 }
