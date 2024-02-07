@@ -204,7 +204,8 @@ main {
 .gif {
     border: 2px solid #c8c6c6;
     width: fit-content;
-    height: fit-content;
+    /* height: fit-content; */
+    padding: 0;
 }
 
 .chat-shortcuts img {
@@ -229,10 +230,7 @@ main {
 }
 
 
-
-.inactive {
-    display: none;
-}
+/* MEDIA QUERIES */
 
 @media only screen and  (min-width: 801px) and  (max-width: 920px) {
     main {
@@ -249,7 +247,7 @@ main {
     }
 }
 
-@media only screen and  (min-width: 431px) and  (max-width: 800px) {
+@media only screen and  (min-width: 541px) and  (max-width: 800px) {
     main {
         padding: 30px;
         justify-content: center;
@@ -264,7 +262,7 @@ main {
     }
 }
 
-@media only screen and  (min-width: 280px) and  (max-width: 430px) {
+@media only screen and  (min-width: 430px) and  (max-width: 540px) {
     main {
         padding: 30px;
         justify-content: center;
@@ -273,8 +271,77 @@ main {
         width: 100%;
         margin-top: 50px;
     }
+
+    #send-button {
+        width: 50px;
+        height: 30px;
+    }
+
+    .chat-shortcuts img {
+        width: 10px;
+    }
+    
+    #emoji {
+        width: 20px;
+    }
     .button-toggler {
-       top: 93%;
+       top: 88%;
+       right: 10%;
+    }
+}
+
+@media only screen and  (min-width: 381px) and  (max-width: 429px) {
+    main {
+        padding: 30px;
+        justify-content: center;
+    }
+    .chat-box{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #send-button {
+        width: 50px;
+        height: 30px;
+    }
+
+    .chat-shortcuts img {
+        width: 10px;
+    }
+    
+    #emoji {
+        width: 20px;
+    }
+    .button-toggler {
+       top: 75%;
+       right: 10%;
+    }
+}
+
+@media only screen and  (min-width: 280px) and  (max-width: 380px) {
+    main {
+        padding: 30px;
+        justify-content: center;
+    }
+    .chat-box{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #send-button {
+        width: 50px;
+        height: 30px;
+    }
+
+    .chat-shortcuts img {
+        width: 10px;
+    }
+    
+    #emoji {
+        width: 20px;
+    }
+    .button-toggler {
+       top: 100%;
        right: 10%;
     }
 }
