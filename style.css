@@ -163,6 +163,27 @@ main {
     border-radius: 0 0 10px 10px;
 }
 
+#send-button {
+    width: 70px;
+    height: 57px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#send-button.hidden {
+    display: none;
+}
+
+.chat-input input:focus + #send-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
 .chat-input input:focus {
     border: none;
     outline: none;
@@ -175,18 +196,23 @@ main {
 
 .chat-shortcuts {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
+    padding: 7px;
 }
 
 .gif {
-    border: 1px solid #c8c6c6;
+    border: 2px solid #c8c6c6;
     width: fit-content;
     height: fit-content;
 }
 
 .chat-shortcuts img {
     width: 20px;
+}
+
+#emoji {
+    width: 30px;
 }
 
 .button-toggler {
@@ -201,6 +227,8 @@ main {
     top: 89%;
   
 }
+
+
 
 .inactive {
     display: none;

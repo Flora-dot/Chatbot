@@ -3,6 +3,7 @@ const toggleButton = document.getElementById('toggle-button');
 const toggleButtonUp = document.getElementById('inactive');
 const chatInput = document.getElementById('chat-input');
 const chatArea = document.getElementById('chat-area');
+const sendButton = document.getElementById('send-button');
 
 function toggleChat() {
 
@@ -71,10 +72,21 @@ function sendMessage() {
 }
 
 
+
 chatInput.addEventListener('keypress', function(event) {
     // Check if the 'Enter' key is pressed (key code 13 or event.key === 'Enter')
     if (event.key === 'Enter') {
         event.preventDefault();
         sendMessage();
     }
+});
+
+sendButton.addEventListener('click', sendMessage);
+
+chatInputInput.addEventListener('focus', function() {
+    sendButton.classList.remove('hidden');
+});
+
+chatInputInput.addEventListener('blur', function() {
+    sendButton.classList.add('hidden');
 });
